@@ -1,0 +1,30 @@
+.DependenciesTitle{
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    padding: 4px 8px;
+    background-color: #ffffff11;
+}
+
+.DependenciesTitle > span{
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.DependenciesItem{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    padding: 4px 8px;
+    user-select: none;
+}
+
+.DependenciesItem:hover{
+    background-color: #ffffff11;
+}
+
+.DependenciesItem > span{
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 13px;
+}

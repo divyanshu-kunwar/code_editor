@@ -1,0 +1,121 @@
+.backImg {
+    height: auto;
+    left: 0px;
+    opacity: 0.5;
+    position: fixed !important;
+    top: 0px;
+    width: 95vw;
+    z-index: -1;
+  }
+.bottomLayout {
+    height: 30px;
+    width: 100%;
+  }
+.codeMixerFrame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+.consoleActions {
+    height: 28px;
+    width: 130px;
+    z-index: 1;
+  }
+.consoleMain {
+    height: 100%;
+    margin-top: -28px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(100% - 10px);
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+  }
+.codeEditor {
+    height: calc(73% - 24px);
+    width: 100%;
+  }
+.commandWindow {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 27%;
+    width: 100%;
+  }
+.dependenciesArea {
+    height: 27%;
+    border-right: 1px solid var(--border-color);
+  }
+.fileActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35px;
+}
+
+.fileActionIcon{
+    filter: brightness(100%) grayscale(60%);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.fileActionIcon:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    transition: 0.5s all;
+}
+
+.fileList {
+    height: calc(100% - 35px);
+  }
+.fileArea {
+    height: calc(73% - 24px);
+    border-right: 1px solid var(--border-color);
+  }
+.leftTitleBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+.leftTitleBar,
+.rightTitleBar {
+    height: 24px;
+    background-color: var(--title-color);
+  }
+.normalLayout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+.overlayLayout {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+.topLayout {
+    height: calc(100vh - 30px);
+    width: 100%;
+  }
+.topLeftLayout {
+    height: 100%;
+    width: 14%;
+  }
+.topRightLayout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc(100% - 14%);
+  }
+
+.leftTitleText {
+    font-size: 12px;
+    margin-left: 10px;
+  }

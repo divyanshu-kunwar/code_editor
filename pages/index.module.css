@@ -1,0 +1,131 @@
+.codeEditorFrame{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.codeEditorFrame > div{
+    height: 100%;
+}
+
+.codeEditorSideBar{
+    width: 200px;
+    background-color: #252526;
+}
+
+.codeEditorMain{
+    width: calc( 100% - 200px);
+}
+
+.codeEditorMenu{
+    height: 32px;
+    background-color: #303030;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+.codeEditorBodyMain{
+    height: calc( 65% - 32px);
+    display: flex;
+    flex-direction: row;
+    background-color: #1E1E1E;
+}
+
+.lineNumber{
+    width: 36px;
+    height: 100%;
+    font-size: small;
+    padding-top: 18px;
+    padding-left: 2px;
+    padding-right: 6px;
+    color: #45E90C;
+    font-size: 14px;
+    word-spacing: normal;
+    line-height: 22px;
+    font-family: monospace;
+    text-align: end;
+    overflow: auto;
+}
+
+.lineNumber::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.codeEditorBody{
+    position: relative;
+    width: calc(100% - 20px);
+    height: 100%;
+    border-bottom: 1px solid #151515;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.codeEditorBackCode{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: auto;
+    color: #f4f4f4;
+    font-size: 14px;
+    word-spacing: normal;
+    line-height: 22px;
+    font-family: monospace;
+    z-index: 0;
+    padding: 18px;
+}
+.codeEditorBackCode > code{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.CodeEditorTextArea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 1;
+    caret-color: white;
+    font-size: 14px;
+    word-spacing: normal;
+    line-height: 22px;
+    font-family: monospace;
+    resize: none;
+    padding: 18px;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+.codeEditorConsole{
+    height: 32%;
+    border-bottom: 1px solid #151515;
+    padding: 12px;
+}
+
+.codeGreen{
+    color: #45E90C;
+}
+
+.fileTab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    font-size: 14px ;
+    width: max-content;
+    padding: 8px 18px;
+}
+
+.fileTab > span{
+    margin-left: 8px;
+}
