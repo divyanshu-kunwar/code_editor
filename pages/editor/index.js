@@ -14,6 +14,8 @@ import renameIcon from '../../image/icons/renameIcon.svg'
 import deleteIcon from '../../image/icons/deleteIcon.svg'
 import FileArea from '../../components/fileArea'
 import DependenciesArea from '../../components/dependenciesArea'
+import CodeArea from '../../components/CodeArea'
+import ConsoleArea from '../../components/ConsoleArea'
 
 let title = "web development";
 
@@ -48,10 +50,13 @@ export default function CodeMixer(){
                     <div className={style.topRightLayout}>
                         <div className={style.rightTitleBar}></div>
                         <div className={style.codeEditor}>
+                            <CodeArea />
                         </div>
                         <div className={style.commandWindow}>
                             <div className={style.consoleActions}></div>
-                            <div className={style.consoleMain}></div>
+                            <div className={style.consoleMain}>
+                                <ConsoleArea />
+                            </div>
                             </div>
                     </div>
                 </div>
